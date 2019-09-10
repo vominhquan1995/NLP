@@ -1,0 +1,12 @@
+alpha=0.5
+
+beta=0.1
+
+ntopics=5
+
+ndocs=1000
+
+nwords=1001
+
+liters=999
+
