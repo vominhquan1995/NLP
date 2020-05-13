@@ -5,6 +5,7 @@ from model.svm_model import SVMModel
 import numpy as p
 model = Sentence2Vec('./data/data_train.model')
 clf = SVC(gamma='auto')
+import os
 
 
 # read data train 
@@ -38,13 +39,22 @@ positive = []
 negative = []
 
 # run data test
-df = pd.read_excel (r'input\data_test.xlsx')
+df = pd.read_excel (r'input\test.xlsx')
 
+f = open('output/negative.txt', "a",encoding="utf8")
+try:
+    os.rm('output/negative.txt')
+except:
+    pass
+
+print("Finded %s row" % len(df.values))
 for row in df.values:
+    print(row)
     predicted = clf.predict([model.get_vector(row[0])])
     if(predicted == 'tich_cuc'):
         positive.append(row[0])
     else:
+        f.write(row[0] + "\n")
         negative.append(row[0])
 # print(positive)
 print(len(positive))

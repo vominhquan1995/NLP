@@ -67,7 +67,7 @@ if __name__ == '__main__':
             os.rm(file_out)
         except:
             pass
-        f = open(file_out, "a",encoding="utf16")
+        f = open(file_out, "a",encoding="utf8")
         path = 'input/corpus'
         countF = 0
         countA =len(os.listdir(path))
