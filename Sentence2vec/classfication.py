@@ -6,6 +6,7 @@ import numpy as p
 model = Sentence2Vec('./data/data_train.model')
 clf = SVC(gamma='auto')
 import os
+import time
 
 
 # read data train 
@@ -34,6 +35,7 @@ for i in df_train["target"].values:
 
 
 clf = clf.fit(data_train,label_train)
+print("Train data succcss")
 
 positive = []
 negative = []
@@ -41,15 +43,13 @@ negative = []
 # run data test
 df = pd.read_excel (r'input\test.xlsx')
 
-f = open('output/negative.txt', "a",encoding="utf8")
-try:
-    os.rm('output/negative.txt')
-except:
-    pass
+path_output = 'output/negative_' + time.strftime("%d%m%Y_%H%M%S") + '.txt'
 
-print("Finded %s row" % len(df.values))
+f = open(path_output, "a",encoding="utf8")
+
+
+print("Find %s data test" % len(df.values))
 for row in df.values:
-    print(row)
     predicted = clf.predict([model.get_vector(row[0])])
     if(predicted == 'tich_cuc'):
         positive.append(row[0])
@@ -57,10 +57,10 @@ for row in df.values:
         f.write(row[0] + "\n")
         negative.append(row[0])
 # print(positive)
-print(len(positive))
-print("####################")
-print(negative)
-print(len(negative))
+print("Number data positive %s" % len(positive))
+print("Number data negative %s" % len(negative))
+# print(negative)
+# print(len(negative))
 
 
 
