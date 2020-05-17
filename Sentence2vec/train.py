@@ -23,7 +23,7 @@ def cleanData(sentence):
     return sentence
 
 # read data from file txt
-with open('data/input.txt',encoding="utf16",errors='ignore') as f:
+with open('data/data_train.txt',encoding="utf8",errors='ignore') as f:
   lineList = f.readlines()
   print(len(lineList))
   # drop duplicate rows
@@ -33,10 +33,10 @@ with open('data/input.txt',encoding="utf16",errors='ignore') as f:
   tok_titles = [word_tokenize(title) for title in lineList]
   # refer to here for all parameters:
   # https://radimrehurek.com/gensim/models/word2vec.html
-  model = Word2Vec(tok_titles, sg=1, size=100, window=5, min_count=5, workers=4,
-                    iter=100)
+  model = Word2Vec(tok_titles, sg=1, size=100, window=10, min_count=5, workers=5,
+                    iter=10)
   # save model to file
-  model.save('./data/data_train.model')
+  model.save('./data/data_train_full.model')
 
 
 

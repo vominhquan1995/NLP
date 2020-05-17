@@ -3,7 +3,7 @@ from sklearn.svm import SVC
 from lib.sentence2vec import Sentence2Vec
 from model.svm_model import SVMModel
 import numpy as p
-model = Sentence2Vec('./data/data_train.model')
+model = Sentence2Vec('./data/data_train_full.model')
 clf = SVC(gamma='auto')
 import os
 import time
@@ -15,17 +15,17 @@ train_data = []
 df = pd.read_excel (r'input\data_train.xlsx')
 
 for row in df.values:
-    train_data.append({"feature": model.get_vector(row[0]), "target": row[1]})
+    train_data.append({"feature": row[0], "target": row[1]})
 
 df_train = pd.DataFrame(train_data)
 
-data_train = []
-label_train = []
+# data_train = []
+# label_train = []
 
-for i in df_train["feature"].values:
-    data_train.append(i)
-for i in df_train["target"].values:
-    label_train.append(i)
+# for i in df_train["feature"].values:
+#     data_train.append(i)
+# for i in df_train["target"].values:
+#     label_train.append(i)
 
 
 # for i in data_train:
@@ -33,8 +33,11 @@ for i in df_train["target"].values:
 # print(data_train)
 # print(label_train)
 
+model = SVMModel()
 
-clf = clf.fit(data_train,label_train)
+clf = model.clf.fit(df_train["feature"], df_train["target"])
+
+# clf = clf.fit(data_train,label_train)
 print("Train data success")
 
 positive = []
@@ -50,7 +53,7 @@ f = open(path_output, "a",encoding="utf8")
 
 print("Find %s data test" % len(df.values))
 for row in df.values:
-    predicted = clf.predict([model.get_vector(row[0])])
+    predicted = clf.predict([row[0]])
     if(predicted == 'tich_cuc'):
         positive.append(row[0])
     else:
