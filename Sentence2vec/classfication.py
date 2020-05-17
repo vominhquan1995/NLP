@@ -35,7 +35,7 @@ for i in df_train["target"].values:
 
 
 clf = clf.fit(data_train,label_train)
-print("Train data succcss")
+print("Train data success")
 
 positive = []
 negative = []
