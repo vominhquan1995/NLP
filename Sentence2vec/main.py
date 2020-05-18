@@ -26,7 +26,6 @@ if __name__ == '__main__':
         pipe.run()
     if(args.mode == 'pipe-navie'):
         pipe = ClassificationPiPe('navie')
-        print(pipe)
         pipe.run()
     
 

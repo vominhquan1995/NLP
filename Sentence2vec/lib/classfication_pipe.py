@@ -98,6 +98,7 @@ class ClassificationPiPe:
             print(classification_report(y_test, y_result,target_names=target_names))
             f_output.write('Data test positive/negative is %s/%s' % (count_test_pos ,count_test_neg) + "\n")
             f_output.writelines('Data predicted positive/negative is %s/%s \n' % (len(positive) ,len(negative)))
+            f_output.writelines('Accuracy_score is %s \n' % (accuracy_score(y_test, y_result, normalize=True)))
             f_output.write('F1_score is %s' % (f1_score(y_test, y_result, average="macro")) + "\n")
             f_output.write('precision_score is %s' % (precision_score(y_test, y_result, average="macro")) + "\n")
             f_output.write('recall_score is %s' % (recall_score(y_test, y_result, average="macro")) + "\n")

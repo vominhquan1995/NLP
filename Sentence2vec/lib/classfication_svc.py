@@ -69,6 +69,7 @@ class ClassificationSVC:
             f_output.writelines('Data predicted positive/negative is %s/%s \n' % (len(positive) ,len(negative)))
             # f_output.writelines("Predicted as Positive %s \n" % len(positive))
             # f_output.writelines("Predicted  as Negative %s \n" % len(negative))
+            f_output.writelines('Accuracy_score is %s \n' % (accuracy_score(y_test, y_result, normalize=True)))
             f_output.writelines('F1_score is %s \n' % (f1_score(y_test, y_result, average="macro")))
             f_output.writelines('Precision_score is %s \n' % (precision_score(y_test, y_result, average="macro")))
             f_output.writelines('Pecall_score is %s \n' % (recall_score(y_test, y_result, average="macro")))
