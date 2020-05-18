@@ -1,253 +1,143 @@
 ##################################################
-Data test positive/negative is 56/44 
-F1_score is 0.6643271284711627 
-precision_score is 0.6648306813545491 
-recall_score is 0.663961038961039 
-Predicted as Positive 57 
-Predicted  as Negative 43 
+Data test positive/negative is 54/46 
+Data predicted positive/negative is 55/45 
+F1_score is 0.6874684948079444 
+Precision_score is 0.6878787878787879 
+Pecall_score is 0.6871980676328502 
+             precision    recall  f1-score   support
+
+   tich_cuc       0.71      0.72      0.72        54
+   tich_cuc       0.67      0.65      0.66        46
+
+avg / total       0.69      0.69      0.69       100
 ##################################################
 ##################################################
-Data test positive/negative is 52/48 
-F1_score is 0.7584541062801933 
-precision_score is 0.7613636363636364 
-recall_score is 0.7580128205128205 
-Predicted as Positive 56 
-Predicted  as Negative 44 
+Data test positive/negative is 50/50 
+Data predicted positive/negative is 60/40 
+F1_score is 0.6767676767676767 
+Precision_score is 0.6875 
+Pecall_score is 0.6799999999999999 
+             precision    recall  f1-score   support
+
+   tich_cuc       0.65      0.78      0.71        50
+   tich_cuc       0.72      0.58      0.64        50
+
+avg / total       0.69      0.68      0.68       100
 ##################################################
 ##################################################
-Data test positive/negative is 65/35 
-F1_score is 0.6923076923076923 
-precision_score is 0.6923076923076923 
-recall_score is 0.6923076923076923 
-Predicted as Positive 65 
-Predicted  as Negative 35 
+Data test positive/negative is 57/43 
+Data predicted positive/negative is 60/40 
+F1_score is 0.6807743795695602 
+Precision_score is 0.6833333333333333 
+Pecall_score is 0.6795185638514891 
+             precision    recall  f1-score   support
+
+   tich_cuc       0.72      0.75      0.74        57
+   tich_cuc       0.65      0.60      0.63        43
+
+avg / total       0.69      0.69      0.69       100
 ##################################################
 ##################################################
-Data test positive/negative is 46/54 
-F1_score is 0.6884735202492211 
-precision_score is 0.708911307271963 
-recall_score is 0.7000805152979066 
-Predicted as Positive 61 
-Predicted  as Negative 39 
-##################################################
-##################################################
-Data test positive/negative is 47/53 
-F1_score is 0.72 
-precision_score is 0.7226013649136893 
-recall_score is 0.7226013649136893 
-Predicted as Positive 53 
-Predicted  as Negative 47 
-##################################################
-##################################################
-Data test positive/negative is 53/47 
-F1_score is 0.6921182266009852 
-precision_score is 0.7061347061347061 
-recall_score is 0.6928944199116821 
-Predicted as Positive 63 
-Predicted  as Negative 37 
+Data test positive/negative is 42/58 
+Data predicted positive/negative is 59/41 
+F1_score is 0.72997299729973 
+Precision_score is 0.7525837122778007 
+Pecall_score is 0.7508210180623973 
+             precision    recall  f1-score   support
+
+   tich_cuc       0.63      0.88      0.73        42
+   tich_cuc       0.88      0.62      0.73        58
+
+avg / total       0.77      0.73      0.73       100
 ##################################################
 ##################################################
 Data test positive/negative is 45/55 
-F1_score is 0.6892230576441103 
-precision_score is 0.69 
-recall_score is 0.6919191919191919 
-Predicted as Positive 50 
-Predicted  as Negative 50 
-##################################################
-##################################################
-Data test positive/negative is 49/51 
-F1_score is 0.7348021215830274 
-precision_score is 0.767032967032967 
-recall_score is 0.7430972388955582 
-Predicted as Positive 65 
-Predicted  as Negative 35 
-##################################################
-##################################################
-Data test positive/negative is 44/56 
-F1_score is 0.6862030569895738 
-precision_score is 0.7379014020805066 
-recall_score is 0.713474025974026 
-Predicted as Positive 67 
-Predicted  as Negative 33 
-##################################################
-##################################################
-Data test positive/negative is 50/50 
-F1_score is 0.7159090909090909 
-precision_score is 0.733446519524618 
-recall_score is 0.72 
-Predicted as Positive 62 
-Predicted  as Negative 38 
-##################################################
-##################################################
-Data test positive/negative is 44/56 
-F1_score is 0.6193910256410257 
-precision_score is 0.6375 
-recall_score is 0.6339285714285714 
-Predicted as Positive 60 
-Predicted  as Negative 40 
-##################################################
-##################################################
-Data test positive/negative is 51/49 
-Predicted as Positive 56 
-Predicted  as Negative 44 
-F1_score is 0.6884735202492211 
-Precision_score is 0.6915584415584416 
-Pecall_score is 0.6888755502200881 
-##################################################
-##################################################
-Data test positive/negative is 50/50 
-Predicted as Positive 63 
-Predicted  as Negative 37 
-F1_score is 0.7253585596582239 
-Precision_score is 0.7466752466752467 
-Pecall_score is 0.73 
-##################################################
-##################################################
-Data test positive/negative is 44/56 
-Predicted as Positive 62 
-Predicted  as Negative 38 
-F1_score is 0.6186270574066639 
-Precision_score is 0.6426146010186757 
-Pecall_score is 0.6363636363636364 
-##################################################
-##################################################
-Data test positive/negative is 47/53 
-Predicted as Positive 56 
-Predicted  as Negative 44 
-F1_score is 0.7497747973175858 
-Precision_score is 0.7573051948051948 
-Pecall_score is 0.7545162585307106 
-##################################################
-##################################################
-Data test positive/negative is 60/40 
-Predicted as Positive 66 
-Predicted  as Negative 34 
-F1_score is 0.7211497211497212 
-Precision_score is 0.731729055258467 
-Pecall_score is 0.7166666666666667 
-##################################################
-##################################################
-Data test positive/negative is 47/53 
-Predicted as Positive 64 
-Predicted  as Negative 36 
-F1_score is 0.5849782366636298 
-Precision_score is 0.6067708333333333 
-Pecall_score is 0.5987555198715375 
-##################################################
-##################################################
-Data test positive/negative is 54/46 
-Predicted as Positive 63 
-Predicted  as Negative 37 
-F1_score is 0.7631551848419319 
-Precision_score is 0.7784212784212785 
-Pecall_score is 0.7612721417069244 
-##################################################
-##################################################
-Data test positive/negative is 49/51 
-Predicted as Positive 55 
-Predicted  as Negative 45 
-F1_score is 0.7195512820512822 
-Precision_score is 0.7232323232323232 
-Pecall_score is 0.7210884353741496 
-##################################################
-##################################################
-Data test positive/negative is 49/51 
-Predicted as Positive 58 
-Predicted  as Negative 42 
-F1_score is 0.6884735202492211 
-Precision_score is 0.6966338259441708 
-Pecall_score is 0.6916766706682673 
-##################################################
-##################################################
-Data test positive/negative is 48/52 
-Predicted as Positive 55 
-Predicted  as Negative 45 
-F1_score is 0.6897207486738064 
-Precision_score is 0.6939393939393939 
-Pecall_score is 0.6923076923076923 
-##################################################
-##################################################
-Data test positive/negative is 52/48 
-Predicted as Positive 61 
-Predicted  as Negative 39 
-F1_score is 0.6643271284711627 
-Precision_score is 0.6740226986128626 
-Pecall_score is 0.6658653846153846 
-##################################################
-##################################################
-Data test positive/negative is 37/63 
-Data predicted positive/negative is 62/38 
-F1_score is 0.62996299629963 
-Precision_score is 0.6710526315789473 
-Pecall_score is 0.6728871728871728 
-##################################################
-##################################################
-Data test positive/negative is 54/46 
-Data predicted positive/negative is 66/34 
-F1_score is 0.6875 
-Precision_score is 0.7085561497326203 
-Pecall_score is 0.6884057971014492 
-##################################################
-##################################################
-Data test positive/negative is 55/45 
-Data predicted positive/negative is 57/43 
-F1_score is 0.6956168831168831 
-Precision_score is 0.6968584251325989 
-Pecall_score is 0.694949494949495 
-##################################################
-##################################################
-Data test positive/negative is 54/46 
-Data predicted positive/negative is 59/41 
-F1_score is 0.725358559658224 
-Precision_score is 0.7302604381976023 
-Pecall_score is 0.7242351046698873 
+Data predicted positive/negative is 64/36 
+F1_score is 0.6673051718923277 
+Precision_score is 0.6996527777777778 
+Pecall_score is 0.6858585858585858 
+             precision    recall  f1-score   support
+
+   tich_cuc       0.59      0.84      0.70        45
+   tich_cuc       0.81      0.53      0.64        55
+
+avg / total       0.71      0.67      0.66       100
 ##################################################
 ##################################################
 Data test positive/negative is 53/47 
 Data predicted positive/negative is 56/44 
-F1_score is 0.6874684948079444 
-Precision_score is 0.6891233766233766 
-Pecall_score is 0.6870734644720995 
-##################################################
-##################################################
-Data test positive/negative is 53/47 
-Data predicted positive/negative is 65/35 
-F1_score is 0.7106242248863166 
-Precision_score is 0.7318681318681319 
-Pecall_score is 0.711762344439984 
+F1_score is 0.6673051718923279 
+Precision_score is 0.6688311688311688 
+Pecall_score is 0.6670012043356082 
+             precision    recall  f1-score   support
+
+   tich_cuc       0.68      0.72      0.70        53
+   tich_cuc       0.66      0.62      0.64        47
+
+avg / total       0.67      0.67      0.67       100
 ##################################################
 ##################################################
 Data test positive/negative is 49/51 
-Data predicted positive/negative is 57/43 
-F1_score is 0.7390606182256121 
-Precision_score is 0.7462260301917585 
-Pecall_score is 0.7414965986394557 
+Data predicted positive/negative is 63/37 
+F1_score is 0.6753246753246753 
+Precision_score is 0.6958386958386958 
+Pecall_score is 0.6826730692276911 
+             precision    recall  f1-score   support
+
+   tich_cuc       0.63      0.82      0.71        49
+   tich_cuc       0.76      0.55      0.64        51
+
+avg / total       0.70      0.68      0.67       100
 ##################################################
 ##################################################
-Data test positive/negative is 51/49 
+Data test positive/negative is 46/54 
 Data predicted positive/negative is 54/46 
-F1_score is 0.7092731829573935 
-Precision_score is 0.7105475040257649 
-Pecall_score is 0.7092837134853942 
+F1_score is 0.7000000000000001 
+Precision_score is 0.7045088566827697 
+Pecall_score is 0.7045088566827697 
+             precision    recall  f1-score   support
+
+   tich_cuc       0.65      0.76      0.70        46
+   tich_cuc       0.76      0.65      0.70        54
+
+avg / total       0.71      0.70      0.70       100
+##################################################
+##################################################
+Data test positive/negative is 56/44 
+Data predicted positive/negative is 68/32 
+F1_score is 0.6392190152801358 
+Precision_score is 0.6590073529411764 
+Pecall_score is 0.640422077922078 
+             precision    recall  f1-score   support
+
+   tich_cuc       0.66      0.80      0.73        56
+   tich_cuc       0.66      0.48      0.55        44
+
+avg / total       0.66      0.66      0.65       100
+##################################################
+##################################################
+Data test positive/negative is 48/52 
+Data predicted positive/negative is 66/34 
+F1_score is 0.653202774377805 
+Precision_score is 0.6853832442067735 
+Pecall_score is 0.6666666666666667 
+             precision    recall  f1-score   support
+
+   tich_cuc       0.61      0.83      0.70        48
+   tich_cuc       0.76      0.50      0.60        52
+
+avg / total       0.69      0.66      0.65       100
 ##################################################
 ##################################################
 Data test positive/negative is 51/49 
-Data predicted positive/negative is 69/31 
-F1_score is 0.625 
-Precision_score is 0.6591865357643759 
-Pecall_score is 0.6362545018007203 
-##################################################
-##################################################
-Data test positive/negative is 52/48 
-Data predicted positive/negative is 61/39 
-F1_score is 0.6846709388668497 
-Precision_score is 0.6950399327448508 
-Pecall_score is 0.6858974358974359 
-##################################################
-##################################################
-Data test positive/negative is 42/58 
-Data predicted positive/negative is 53/47 
-F1_score is 0.6691729323308271 
-Precision_score is 0.6754315535929345 
-Pecall_score is 0.6793924466338259 
+Data predicted positive/negative is 62/38 
+F1_score is 0.7050147492625369 
+Precision_score is 0.7202886247877759 
+Pecall_score is 0.7076830732292917 
+             precision    recall  f1-score   support
+
+   tich_cuc       0.68      0.82      0.74        51
+   tich_cuc       0.76      0.59      0.67        49
+
+avg / total       0.72      0.71      0.71       100
 ##################################################

@@ -57,15 +57,14 @@ class ClassificationSVC:
                 else:
                     count_test_neg = count_test_neg + 1
                 predicted = clf.predict([model.get_vector(row[0])])
-                y_result.append(predicted)
-                if(predicted == 'tich_cuc'):
-                    y_result
+                y_result.append(predicted[0])
+                if(predicted[0] == 'tich_cuc'):
                     positive.append(row[0])
                 else:
                     negative.append(row[0])
             # print(positive)
-            print("Predicted as Positive %s" % len(positive))
-            print("Predicted  as Negative %s" % len(negative))
+            target_names = ['tich_cuc', 'tieu_cuc']
+            print(classification_report(y_test, y_result,target_names=target_names))
             f_output.writelines('Data test positive/negative is %s/%s \n' % (count_test_pos ,count_test_neg))
             f_output.writelines('Data predicted positive/negative is %s/%s \n' % (len(positive) ,len(negative)))
             # f_output.writelines("Predicted as Positive %s \n" % len(positive))
@@ -73,12 +72,10 @@ class ClassificationSVC:
             f_output.writelines('F1_score is %s \n' % (f1_score(y_test, y_result, average="macro")))
             f_output.writelines('Precision_score is %s \n' % (precision_score(y_test, y_result, average="macro")))
             f_output.writelines('Pecall_score is %s \n' % (recall_score(y_test, y_result, average="macro")))
+            f_output.writelines(classification_report(y_test, y_result,target_names=target_names))
             f_output.writelines("##################################################\n")
-
-
-
-            # print(negative)
-            # print(len(negative))
+         
+          
 
 
 

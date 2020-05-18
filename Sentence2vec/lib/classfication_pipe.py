@@ -88,23 +88,20 @@ class ClassificationPiPe:
                     count_test_neg = count_test_neg + 1
                 # f_data_test.write(row[0] + ',' + row[1] + "\n")
                 predicted = clf.predict([row[0]])
-                y_result.append(predicted)
-                if(predicted == 'tich_cuc'):
+                y_result.append(predicted[0])
+                if(predicted[0] == 'tich_cuc'):
                     positive.append(row[0])
                 else:
                     negative.append(row[0])
             # show result 
-            print(f1_score(y_test, y_result, average="macro"))
-            print(precision_score(y_test, y_result, average="macro"))
-            print(recall_score(y_test, y_result, average="macro")) 
+            target_names = ['tich_cuc', 'tieu_cuc']
+            print(classification_report(y_test, y_result,target_names=target_names))
             f_output.write('Data test positive/negative is %s/%s' % (count_test_pos ,count_test_neg) + "\n")
+            f_output.writelines('Data predicted positive/negative is %s/%s \n' % (len(positive) ,len(negative)))
             f_output.write('F1_score is %s' % (f1_score(y_test, y_result, average="macro")) + "\n")
             f_output.write('precision_score is %s' % (precision_score(y_test, y_result, average="macro")) + "\n")
             f_output.write('recall_score is %s' % (recall_score(y_test, y_result, average="macro")) + "\n")
-            print("Predicted as Positive %s" % len(positive))
-            print("Predicted  as Negative %s" % len(negative))
-            f_output.write("Predicted as Positive %s" % len(positive) + "\n")
-            f_output.write("Predicted  as Negative %s" % len(negative) + "\n")
+            f_output.writelines(classification_report(y_test, y_result,target_names=target_names))
             f_output.write("#########################END#########################"+ "\n")
 
 
