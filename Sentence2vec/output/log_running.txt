@@ -1,90 +1,203 @@
-#########################START#########################
-Loop is 1
-Data train positive/negative is 496/504
-Data test positive/negative is 55/45
-F1_score is 0.8376623376623378
-precision_score is 0.8396572827417381
-recall_score is 0.8363636363636364
-Predicted as Positive 57
-Predicted  as Negative 43
-Loop is 2
+######################### START WITH MODE NAVIE #########################Loop is 1
+Data train positive/negative is 498/502
+######################### START WITH MODE NAVIE #########################Loop is 1
+Data train positive/negative is 497/503
+######################### START WITH MODE NAVIE #########################Loop is 1
 Data train positive/negative is 498/502
 Data test positive/negative is 53/47
-F1_score is 0.7894736842105263
-precision_score is 0.7892628205128205
-recall_score is 0.7898434363709355
-Predicted as Positive 52
-Predicted  as Negative 48
+F1_score is 0.8279178054458953
+precision_score is 0.833743842364532
+recall_score is 0.8263749498193497
+Predicted as Positive 58
+Predicted  as Negative 42
+#########################END#########################
+Loop is 2
+Data train positive/negative is 508/492
+Data test positive/negative is 43/57
+F1_score is 0.767182913250329
+precision_score is 0.7661030595813204
+recall_score is 0.7696858425132599
+Predicted as Positive 46
+Predicted  as Negative 54
+#########################END#########################
 Loop is 3
-Data train positive/negative is 500/500
-Data test positive/negative is 51/49
-F1_score is 0.78997899789979
-precision_score is 0.7908653846153846
-recall_score is 0.790516206482593
+Data train positive/negative is 496/504
+Data test positive/negative is 55/45
+F1_score is 0.7097387648883996
+precision_score is 0.7123397435897436
+recall_score is 0.7141414141414142
 Predicted as Positive 48
 Predicted  as Negative 52
+#########################END#########################
 Loop is 4
 Data train positive/negative is 504/496
 Data test positive/negative is 47/53
-F1_score is 0.8199279711884753
-precision_score is 0.8207282913165266
-recall_score is 0.8217583299879567
+F1_score is 0.7889659330720531
+precision_score is 0.7894524959742351
+recall_score is 0.7886391007627459
+Predicted as Positive 46
+Predicted  as Negative 54
+#########################END#########################
+Loop is 5
+Data train positive/negative is 499/501
+Data test positive/negative is 52/48
+F1_score is 0.779205138498595
+precision_score is 0.7801932367149759
+recall_score is 0.7788461538461539
+Predicted as Positive 54
+Predicted  as Negative 46
+#########################END#########################
+Loop is 6
+Data train positive/negative is 508/492
+Data test positive/negative is 43/57
+F1_score is 0.8173701298701299
+precision_score is 0.8161616161616161
+recall_score is 0.8192574459404325
+Predicted as Positive 45
+Predicted  as Negative 55
+#########################END#########################
+Loop is 7
+Data train positive/negative is 504/496
+Data test positive/negative is 47/53
+F1_score is 0.7599039615846339
+precision_score is 0.760704281712685
+recall_score is 0.7615415495784825
 Predicted as Positive 51
 Predicted  as Negative 49
-Loop is 5
+#########################END#########################
+Loop is 8
 Data train positive/negative is 501/499
 Data test positive/negative is 50/50
-F1_score is 0.839421918908069
-precision_score is 0.8449675324675325
-recall_score is 0.8400000000000001
-Predicted as Positive 56
-Predicted  as Negative 44
-Loop is 6
-Data train positive/negative is 494/506
-Data test positive/negative is 57/43
-F1_score is 0.8291628982011858
-precision_score is 0.8300000000000001
-recall_score is 0.8365973072215422
+F1_score is 0.8095238095238095
+precision_score is 0.8131313131313131
+recall_score is 0.81
+Predicted as Positive 55
+Predicted  as Negative 45
+#########################END#########################
+Loop is 9
+Data train positive/negative is 499/501
+Data test positive/negative is 52/48
+F1_score is 0.8899009108197378
+precision_score is 0.8897559023609444
+recall_score is 0.890224358974359
+Predicted as Positive 51
+Predicted  as Negative 49
+#########################END#########################
+Loop is 10
+Data train positive/negative is 498/502
+Data test positive/negative is 53/47
+F1_score is 0.728670485378354
+precision_score is 0.7290660225442833
+recall_score is 0.7284223203532718
+Predicted as Positive 54
+Predicted  as Negative 46
+#########################END#########################
+Loop is 11
+Data train positive/negative is 495/505
+Data test positive/negative is 56/44
+F1_score is 0.8193496587715776
+precision_score is 0.8200000000000001
+recall_score is 0.8246753246753247
 Predicted as Positive 50
 Predicted  as Negative 50
+#########################END#########################
+######################### START WITH MODE NAVIE #########################Loop is 1
+Data train positive/negative is 499/501
+Data test positive/negative is 52/48
+F1_score is 0.7584541062801933
+precision_score is 0.7613636363636364
+recall_score is 0.7580128205128205
+Predicted as Positive 56
+Predicted  as Negative 44
+#########################END#########################
+Loop is 2
+Data train positive/negative is 502/498
+Data test positive/negative is 49/51
+F1_score is 0.7297567811029927
+precision_score is 0.7299679487179487
+recall_score is 0.7296918767507004
+Predicted as Positive 48
+Predicted  as Negative 52
+#########################END#########################
+Loop is 3
+Data train positive/negative is 495/505
+Data test positive/negative is 56/44
+F1_score is 0.7564935064935066
+precision_score is 0.7564935064935066
+recall_score is 0.7564935064935066
+Predicted as Positive 56
+Predicted  as Negative 44
+#########################END#########################
+Loop is 4
+Data train positive/negative is 504/496
+Data test positive/negative is 47/53
+F1_score is 0.769792813532179
+precision_score is 0.77
+recall_score is 0.7709755118426336
+Predicted as Positive 50
+Predicted  as Negative 50
+#########################END#########################
+Loop is 5
+Data train positive/negative is 495/505
+Data test positive/negative is 56/44
+F1_score is 0.8197115384615385
+precision_score is 0.8229166666666667
+recall_score is 0.8271103896103896
+Predicted as Positive 48
+Predicted  as Negative 52
+#########################END#########################
+Loop is 6
+Data train positive/negative is 508/492
+Data test positive/negative is 43/57
+F1_score is 0.8188405797101448
+precision_score is 0.8187274909963985
+recall_score is 0.824969400244798
+Predicted as Positive 49
+Predicted  as Negative 51
+#########################END#########################
 Loop is 7
 Data train positive/negative is 507/493
 Data test positive/negative is 44/56
-F1_score is 0.7863899908452853
-precision_score is 0.7872297021623826
-recall_score is 0.7857142857142857
-Predicted as Positive 43
-Predicted  as Negative 57
+F1_score is 0.8279178054458953
+precision_score is 0.8272727272727273
+recall_score is 0.8287337662337663
+Predicted as Positive 45
+Predicted  as Negative 55
+#########################END#########################
 Loop is 8
-Data train positive/negative is 498/502
-Data test positive/negative is 53/47
-F1_score is 0.8
-precision_score is 0.8028904054596548
-recall_score is 0.8028904054596548
-Predicted as Positive 47
-Predicted  as Negative 53
+Data train positive/negative is 500/500
+Data test positive/negative is 51/49
+F1_score is 0.84
+precision_score is 0.8403361344537814
+recall_score is 0.8403361344537814
+Predicted as Positive 49
+Predicted  as Negative 51
+#########################END#########################
 Loop is 9
 Data train positive/negative is 503/497
 Data test positive/negative is 48/52
-F1_score is 0.7499749974997499
-precision_score is 0.750500200080032
-recall_score is 0.750801282051282
+F1_score is 0.8200000000000001
+precision_score is 0.8213141025641025
+recall_score is 0.8213141025641025
+Predicted as Positive 52
+Predicted  as Negative 48
+#########################END#########################
+Loop is 10
+Data train positive/negative is 502/498
+Data test positive/negative is 49/51
+F1_score is 0.7799999999999999
+precision_score is 0.78031212484994
+recall_score is 0.78031212484994
 Predicted as Positive 51
 Predicted  as Negative 49
-Loop is 10
-Data train positive/negative is 504/496
-Data test positive/negative is 47/53
-F1_score is 0.8095238095238095
-precision_score is 0.8092948717948718
-recall_score is 0.8099156965074268
-Predicted as Positive 48
-Predicted  as Negative 52
-Loop is 11
-Data train positive/negative is 505/495
-Data test positive/negative is 46/54
-F1_score is 0.7756017951856384
-precision_score is 0.7833333333333334
-recall_score is 0.7737520128824477
-Predicted as Positive 40
-Predicted  as Negative 60
 #########################END#########################
+Loop is 11
+Data train positive/negative is 495/505
+Data test positive/negative is 56/44
+F1_score is 0.8270776116366595
+precision_score is 0.8280293757649939
+recall_score is 0.8262987012987013
+Predicted as Positive 57
+Predicted  as Negative 43
+#########################END#########################
+######################### START WITH MODE SVM #########################

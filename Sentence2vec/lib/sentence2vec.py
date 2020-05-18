@@ -19,7 +19,7 @@ class Sentence2Vec:
         sentence = re.sub(r'[^A-Za-z0-9\s]', r'', str(sentence).lower())
 
         vectors = [self.model.wv[w] for w in word_tokenize(sentence)
-                   if w in self.model.wv]
+                if w in self.model.wv]
 
         v = np.zeros(self.model.vector_size)
 
