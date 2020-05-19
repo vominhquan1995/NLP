@@ -9,7 +9,7 @@ from sklearn.metrics import accuracy_score, f1_score, precision_score,average_pr
 class ClassificationSVC:
     def run():
         # define model classification
-        model = Sentence2Vec('input/model/data_train_full.model')
+        model = Sentence2Vec('input/model/data_train_300v.model')
         clf = SVC(kernel='linear', C = 1e3)
         # define file write log
         path_output = 'output/log_svc_running.txt'
@@ -90,7 +90,7 @@ class ClassificationSVC:
             f_output.writelines('Recall_score is %s \n' % (recall_score(y_test, y_result, average="macro")))
             f_output.writelines(classification_report(y_test, y_result,target_names=target_names))
             f_output.writelines("##################################################\n")
-            break
+            # break
          
           
 
