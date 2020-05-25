@@ -78,10 +78,13 @@ if __name__ == '__main__':
                 text = text.strip()
                 # for childText in sent_tokenize(text):
                     # word = childText.translate(str.maketrans(' ', ' ', string.punctuation))
-                output =   word_tokenize(text, format="text") 
+                # output =   word_tokenize(text, format="text") 
+                output = ViTokenizer.tokenize(text)
                 # print(len(output))
                 print('word_tokenize: ', output)
                 if(len(output) > 10):
                     output= TextPreprocess.preprocess(TextPreprocess,output) + "\n"
                     print('clean text: ' , output)
                     f.write(output)
+                break    
+            break    
