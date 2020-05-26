@@ -3,7 +3,7 @@ import numpy as np
 from numpy import dot
 from numpy.linalg import norm
 from gensim.models import Word2Vec
-from nltk import word_tokenize
+from pyvi import ViTokenizer
 
 
 class Sentence2Vec:
@@ -18,7 +18,7 @@ class Sentence2Vec:
         # alpha-numericals and spaces
         sentence = re.sub(r'[^A-Za-z0-9\s]', r'', str(sentence).lower())
 
-        vectors = [self.model.wv[w] for w in word_tokenize(sentence)
+        vectors = [self.model.wv[w] for w in ViTokenizer.word_tokenize(sentence)
                 if w in self.model.wv]
 
         v = np.zeros(self.model.vector_size)
