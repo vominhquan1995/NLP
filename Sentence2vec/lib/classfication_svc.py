@@ -1,22 +1,38 @@
 import pandas as pd
 from sklearn.svm import SVC
+import timeit
 from lib.sentence2vec import Sentence2Vec
 import numpy as p
 import os,time,random
 from sklearn.model_selection import KFold
 import numpy as np
 from sklearn.metrics import accuracy_score, f1_score, precision_score,average_precision_score, recall_score, classification_report, confusion_matrix
+from sklearn.naive_bayes import BernoulliNB,MultinomialNB,GaussianNB
 class ClassificationSVC:
-    def run():
+    def Average(lst): 
+        return sum(lst) / len(lst) 
+
+    def run(mode):
+        
+
+        start = timeit.default_timer()
         # define model classification
-        model = Sentence2Vec('input/model/data_train_300v.model')
-        clf = SVC(kernel='linear', C = 1e3)
+        model = Sentence2Vec('input/model/data_train_200v.model')
+        clf_svm = SVC(kernel='linear', C = 1e3)
+        clf_naive = BernoulliNB()
+        # default svm
+        clf = clf_svm
+        if(mode == 'svm'):
+            clf = clf_svm
+        if(mode == 'naive'):
+            clf = clf_naive
+        
         # define file write log
         path_output = 'output/log_svc_running.txt'
-        path_x_test = 'output/x_test' + time.strftime("%d%m%Y_%H%M%S") + '.txt'
-        path_y_test = 'output/y_test_' + time.strftime("%d%m%Y_%H%M%S") + '.txt'
-        f_x_test = open(path_x_test, "a",encoding="utf8")
-        f_y_test = open(path_y_test, "a",encoding="utf8")
+        # path_x_test = 'output/x_test' + time.strftime("%d%m%Y_%H%M%S") + '.txt'
+        # path_y_test = 'output/y_test_' + time.strftime("%d%m%Y_%H%M%S") + '.txt'
+        # f_x_test = open(path_x_test, "a",encoding="utf8")
+        # f_y_test = open(path_y_test, "a",encoding="utf8")
         f_output = open(path_output, "a",encoding="utf8")
 
 
@@ -26,6 +42,9 @@ class ClassificationSVC:
         data_shuffle =random.sample(arr.tolist(), len(arr)) 
         # split list data
         kf = KFold(n_splits=10)
+        precision_avg = []
+        recall_avg = []
+        f1_avg = []
         for train_index, test_index in kf.split(data_shuffle):
             # path_output_predict_pos = 'output/data_pos_' + time.strftime("%d%m%Y_%H%M%S") + '.txt'
             # path_output_predict_neg = 'output/data_neg_' + time.strftime("%d%m%Y_%H%M%S") + '.txt'
@@ -40,13 +59,12 @@ class ClassificationSVC:
             f_output.writelines("##################################################\n")
 
 
-           
             data_train = []
             label_train = []
+            
             for row in X_train:
                 data_train.append(model.get_vector(row[0]))
                 label_train.append(row[1]) 
-
             clf = clf.fit(data_train,label_train)
             print("Train data success")
 
@@ -61,8 +79,8 @@ class ClassificationSVC:
             count_test_pos= 0
             count_test_neg= 0
             for row in X_test:
-                f_x_test.write(row[0] + "\n")
-                f_y_test.write(row[1] + "\n")
+                # f_x_test.write(row[0] + "\n")
+                # f_y_test.write(row[1] + "\n")
                 y_test.append(row[1])
                 if(row[1] == 'tich_cuc'):
                     count_test_pos= count_test_pos + 1
@@ -78,7 +96,7 @@ class ClassificationSVC:
                     negative.append(row[0])
             # print(positive)
             target_names = ['tich_cuc', 'tieu_cuc']
-            print(classification_report(y_test, y_result,target_names=target_names))
+            # print(classification_report(y_test, y_result,target_names=target_names))
             f_output.writelines('Data test positive/negative is %s/%s \n' % (count_test_pos ,count_test_neg))
             f_output.writelines('Data predicted positive/negative is %s/%s \n' % (len(positive) ,len(negative)))
             # f_output.writelines("Predicted as Positive %s \n" % len(positive))
@@ -89,12 +107,16 @@ class ClassificationSVC:
             # f_output.writelines('average_precision_score is %s \n' % (average_precision_score(y_test, y_result)))
             f_output.writelines('Recall_score is %s \n' % (recall_score(y_test, y_result, average="macro")))
             f_output.writelines(classification_report(y_test, y_result,target_names=target_names))
-            f_output.writelines("##################################################\n")
+            precision_avg.append(precision_score(y_test, y_result,average="macro"))
+            recall_avg.append(recall_score(y_test, y_result, average="macro"))
+            f1_avg.append(accuracy_score(y_test, y_result, normalize=True))
             # break
-         
-          
-
-
+        stop = timeit.default_timer()
+        f_output.writelines("------------------------------------------------\n")
+        f_output.writelines('Avg precision is %s \n' % ClassificationSVC.Average(precision_avg))
+        f_output.writelines('Avg recall is %s \n' % ClassificationSVC.Average(recall_avg))
+        f_output.writelines('Avg f1 is %s \n' % ClassificationSVC.Average(f1_avg))
+        f_output.writelines('Time is %s \n' % (stop - start))
 
 
 

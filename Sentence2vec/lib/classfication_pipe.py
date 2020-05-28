@@ -9,11 +9,15 @@ from sklearn.pipeline import Pipeline
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.feature_extraction.text import TfidfTransformer
 from sklearn.linear_model import SGDClassifier
-from sklearn.naive_bayes import MultinomialNB
+from sklearn.naive_bayes import MultinomialNB,GaussianNB
 from sklearn.metrics import accuracy_score, f1_score, precision_score, recall_score, classification_report, confusion_matrix
 import os,time
+import timeit
+from sklearn.tree import DecisionTreeClassifier
 
 class ClassificationPiPe:
+    def Average(lst): 
+        return sum(lst) / len(lst) 
     def __init__(self, option):
         if(option == 'svm'):
             self.option = 'SVM'
@@ -22,14 +26,22 @@ class ClassificationPiPe:
             ("tfidf", TfidfTransformer()),
             ("clf", SGDClassifier(loss='log', penalty='l2', alpha=1e-3, max_iter=3000, random_state=None))
             ])
-        else:
+        if(option == 'naive'):
             self.option = 'NAVIE'
             self.clf = Pipeline([
                 ("vect", CountVectorizer()),#bag-of-words
                 ("tfidf", TfidfTransformer()),#tf-idf
-                ("clf", MultinomialNB())#model naive bayes
+                ("clf", MultinomialNB())#naive bayes
+            ])
+        if(option == 'tree'):
+            self.option = 'tree'
+            self.clf = Pipeline([
+                ("vect", CountVectorizer()),#bag-of-words
+                ("tfidf", TfidfTransformer()),#tf-idf
+                ("clf", DecisionTreeClassifier())#tree
             ])
     def run(self):
+        start = timeit.default_timer()
         path_output = 'output/log_running.txt'
         f_output = open(path_output, "a",encoding="utf8")
         f_output.writelines("######################### START WITH MODE %s #########################" %self.option)
@@ -40,7 +52,10 @@ class ClassificationPiPe:
         data_shuffle =random.sample(arr.tolist(), len(arr)) 
         # print(data_shuffle)
 
-        kf = KFold(n_splits=11)
+        kf = KFold(n_splits=10)
+        precision_avg = []
+        recall_avg = []
+        f1_avg = []
         for train_index, test_index in kf.split(data_shuffle):
             # write data train to file 
             path_output_train = 'output/data_train_' + time.strftime("%d%m%Y_%H%M%S") + '.txt'
@@ -103,7 +118,15 @@ class ClassificationPiPe:
             f_output.write('precision_score is %s' % (precision_score(y_test, y_result, average="macro")) + "\n")
             f_output.write('recall_score is %s' % (recall_score(y_test, y_result, average="macro")) + "\n")
             f_output.writelines(classification_report(y_test, y_result,target_names=target_names))
-            f_output.write("#########################END#########################"+ "\n")
+            precision_avg.append(precision_score(y_test, y_result,average="macro"))
+            recall_avg.append(recall_score(y_test, y_result, average="macro"))
+            f1_avg.append(accuracy_score(y_test, y_result, normalize=True))
+        stop = timeit.default_timer()
+        f_output.writelines("------------------------------------------------\n")
+        f_output.writelines('Avg precision is %s \n' % ClassificationPiPe.Average(precision_avg))
+        f_output.writelines('Avg recall is %s \n' % ClassificationPiPe.Average(recall_avg))
+        f_output.writelines('Avg f1 is %s \n' % ClassificationPiPe.Average(f1_avg))
+        f_output.writelines('Time is %s \n' % (stop - start))
 
 
 

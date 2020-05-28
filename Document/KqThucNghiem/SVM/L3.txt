@@ -1,0 +1,145 @@
+##################################################
+Data test positive/negative is 53/47 
+Data predicted positive/negative is 58/42 
+Accuracy_score is 0.73 
+Precision_score is 0.7311165845648604 
+Recall_score is 0.7260136491368928 
+              precision    recall  f1-score   support
+
+    tich_cuc       0.72      0.79      0.76        53
+    tieu_cuc       0.74      0.66      0.70        47
+
+   micro avg       0.73      0.73      0.73       100
+   macro avg       0.73      0.73      0.73       100
+weighted avg       0.73      0.73      0.73       100
+##################################################
+Data test positive/negative is 54/46 
+Data predicted positive/negative is 64/36 
+Accuracy_score is 0.74 
+Precision_score is 0.7482638888888888 
+Recall_score is 0.7302737520128825 
+              precision    recall  f1-score   support
+
+    tich_cuc       0.72      0.85      0.78        54
+    tieu_cuc       0.78      0.61      0.68        46
+
+   micro avg       0.74      0.74      0.74       100
+   macro avg       0.75      0.73      0.73       100
+weighted avg       0.75      0.74      0.74       100
+##################################################
+Data test positive/negative is 48/52 
+Data predicted positive/negative is 50/50 
+Accuracy_score is 0.8 
+Precision_score is 0.8 
+Recall_score is 0.8004807692307692 
+              precision    recall  f1-score   support
+
+    tich_cuc       0.78      0.81      0.80        48
+    tieu_cuc       0.82      0.79      0.80        52
+
+   micro avg       0.80      0.80      0.80       100
+   macro avg       0.80      0.80      0.80       100
+weighted avg       0.80      0.80      0.80       100
+##################################################
+Data test positive/negative is 56/44 
+Data predicted positive/negative is 55/45 
+Accuracy_score is 0.81 
+Precision_score is 0.807070707070707 
+Recall_score is 0.8084415584415584 
+              precision    recall  f1-score   support
+
+    tich_cuc       0.84      0.82      0.83        56
+    tieu_cuc       0.78      0.80      0.79        44
+
+   micro avg       0.81      0.81      0.81       100
+   macro avg       0.81      0.81      0.81       100
+weighted avg       0.81      0.81      0.81       100
+##################################################
+Data test positive/negative is 42/58 
+Data predicted positive/negative is 43/57 
+Accuracy_score is 0.77 
+Precision_score is 0.7639738882088942 
+Recall_score is 0.7655993431855501 
+              precision    recall  f1-score   support
+
+    tich_cuc       0.72      0.74      0.73        42
+    tieu_cuc       0.81      0.79      0.80        58
+
+   micro avg       0.77      0.77      0.77       100
+   macro avg       0.76      0.77      0.76       100
+weighted avg       0.77      0.77      0.77       100
+##################################################
+Data test positive/negative is 53/47 
+Data predicted positive/negative is 59/41 
+Accuracy_score is 0.82 
+Precision_score is 0.8251343530384456 
+Recall_score is 0.8157366519470093 
+              precision    recall  f1-score   support
+
+    tich_cuc       0.80      0.89      0.84        53
+    tieu_cuc       0.85      0.74      0.80        47
+
+   micro avg       0.82      0.82      0.82       100
+   macro avg       0.83      0.82      0.82       100
+weighted avg       0.82      0.82      0.82       100
+##################################################
+Data test positive/negative is 54/46 
+Data predicted positive/negative is 56/44 
+Accuracy_score is 0.8 
+Precision_score is 0.799512987012987 
+Recall_score is 0.7971014492753623 
+              precision    recall  f1-score   support
+
+    tich_cuc       0.80      0.83      0.82        54
+    tieu_cuc       0.80      0.76      0.78        46
+
+   micro avg       0.80      0.80      0.80       100
+   macro avg       0.80      0.80      0.80       100
+weighted avg       0.80      0.80      0.80       100
+##################################################
+Data test positive/negative is 47/53 
+Data predicted positive/negative is 53/47 
+Accuracy_score is 0.7 
+Precision_score is 0.7025291047771979 
+Recall_score is 0.7025291047771979 
+              precision    recall  f1-score   support
+
+    tich_cuc       0.66      0.74      0.70        47
+    tieu_cuc       0.74      0.66      0.70        53
+
+   micro avg       0.70      0.70      0.70       100
+   macro avg       0.70      0.70      0.70       100
+weighted avg       0.71      0.70      0.70       100
+##################################################
+Data test positive/negative is 57/43 
+Data predicted positive/negative is 59/41 
+Accuracy_score is 0.76 
+Precision_score is 0.7556841670111616 
+Recall_score is 0.7523459812321501 
+              precision    recall  f1-score   support
+
+    tich_cuc       0.78      0.81      0.79        57
+    tieu_cuc       0.73      0.70      0.71        43
+
+   micro avg       0.76      0.76      0.76       100
+   macro avg       0.76      0.75      0.75       100
+weighted avg       0.76      0.76      0.76       100
+##################################################
+Data test positive/negative is 43/57 
+Data predicted positive/negative is 51/49 
+Accuracy_score is 0.78 
+Precision_score is 0.7815126050420168 
+Recall_score is 0.7870257037943696 
+              precision    recall  f1-score   support
+
+    tich_cuc       0.71      0.84      0.77        43
+    tieu_cuc       0.86      0.74      0.79        57
+
+   micro avg       0.78      0.78      0.78       100
+   macro avg       0.78      0.79      0.78       100
+weighted avg       0.79      0.78      0.78       100
+------------------------------------------------
+Avg precision is 0.7714798285615159 
+Avg recall is 0.7685547963033741 
+Avg f1 is 0.771 
+Time is 35.448410100000004 

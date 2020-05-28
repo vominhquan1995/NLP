@@ -1,0 +1,155 @@
+######################### START WITH MODE tree #########################Data train positive/negative is 462/438
+Data test positive/negative is 45/55
+Data predicted positive/negative is 49/51 
+Accuracy_score is 0.82 
+F1_score is 0.8193496587715776
+precision_score is 0.8191276510604242
+recall_score is 0.8222222222222222
+              precision    recall  f1-score   support
+
+    tich_cuc       0.78      0.84      0.81        45
+    tieu_cuc       0.86      0.80      0.83        55
+
+   micro avg       0.82      0.82      0.82       100
+   macro avg       0.82      0.82      0.82       100
+weighted avg       0.82      0.82      0.82       100
+Data train positive/negative is 452/448
+Data test positive/negative is 55/45
+Data predicted positive/negative is 47/53 
+Accuracy_score is 0.78 
+F1_score is 0.7799119647859143
+precision_score is 0.7840224809313528
+recall_score is 0.7858585858585858
+              precision    recall  f1-score   support
+
+    tich_cuc       0.85      0.73      0.78        55
+    tieu_cuc       0.72      0.84      0.78        45
+
+   micro avg       0.78      0.78      0.78       100
+   macro avg       0.78      0.79      0.78       100
+weighted avg       0.79      0.78      0.78       100
+Data train positive/negative is 458/442
+Data test positive/negative is 49/51
+Data predicted positive/negative is 45/55 
+Accuracy_score is 0.76 
+F1_score is 0.7591328783621036
+precision_score is 0.7616161616161616
+recall_score is 0.7591036414565826
+              precision    recall  f1-score   support
+
+    tich_cuc       0.78      0.71      0.74        49
+    tieu_cuc       0.75      0.80      0.77        51
+
+   micro avg       0.76      0.76      0.76       100
+   macro avg       0.76      0.76      0.76       100
+weighted avg       0.76      0.76      0.76       100
+Data train positive/negative is 449/451
+Data test positive/negative is 58/42
+Data predicted positive/negative is 56/44 
+Accuracy_score is 0.8 
+F1_score is 0.7960016319869441
+precision_score is 0.7946428571428572
+recall_score is 0.7980295566502462
+              precision    recall  f1-score   support
+
+    tich_cuc       0.84      0.81      0.82        58
+    tieu_cuc       0.75      0.79      0.77        42
+
+   micro avg       0.80      0.80      0.80       100
+   macro avg       0.79      0.80      0.80       100
+weighted avg       0.80      0.80      0.80       100
+Data train positive/negative is 453/447
+Data test positive/negative is 54/46
+Data predicted positive/negative is 55/45 
+Accuracy_score is 0.79 
+F1_score is 0.7882851093860269
+precision_score is 0.788888888888889
+recall_score is 0.787842190016103
+              precision    recall  f1-score   support
+
+    tich_cuc       0.80      0.81      0.81        54
+    tieu_cuc       0.78      0.76      0.77        46
+
+   micro avg       0.79      0.79      0.79       100
+   macro avg       0.79      0.79      0.79       100
+weighted avg       0.79      0.79      0.79       100
+Data train positive/negative is 459/441
+Data test positive/negative is 48/52
+Data predicted positive/negative is 51/49 
+Accuracy_score is 0.83 
+F1_score is 0.82998299829983
+precision_score is 0.830532212885154
+recall_score is 0.8309294871794872
+              precision    recall  f1-score   support
+
+    tich_cuc       0.80      0.85      0.83        48
+    tieu_cuc       0.86      0.81      0.83        52
+
+   micro avg       0.83      0.83      0.83       100
+   macro avg       0.83      0.83      0.83       100
+weighted avg       0.83      0.83      0.83       100
+Data train positive/negative is 454/446
+Data test positive/negative is 53/47
+Data predicted positive/negative is 45/55 
+Accuracy_score is 0.84 
+F1_score is 0.839935974389756
+precision_score is 0.8464646464646465
+recall_score is 0.8442392613408269
+              precision    recall  f1-score   support
+
+    tich_cuc       0.91      0.77      0.84        53
+    tieu_cuc       0.78      0.91      0.84        47
+
+   micro avg       0.84      0.84      0.84       100
+   macro avg       0.85      0.84      0.84       100
+weighted avg       0.85      0.84      0.84       100
+Data train positive/negative is 458/442
+Data test positive/negative is 49/51
+Data predicted positive/negative is 48/52 
+Accuracy_score is 0.79 
+F1_score is 0.7898108297467721
+precision_score is 0.7900641025641025
+recall_score is 0.7897158863545418
+              precision    recall  f1-score   support
+
+    tich_cuc       0.79      0.78      0.78        49
+    tieu_cuc       0.79      0.80      0.80        51
+
+   micro avg       0.79      0.79      0.79       100
+   macro avg       0.79      0.79      0.79       100
+weighted avg       0.79      0.79      0.79       100
+Data train positive/negative is 466/434
+Data test positive/negative is 41/59
+Data predicted positive/negative is 38/62 
+Accuracy_score is 0.79 
+F1_score is 0.7803117480908044
+precision_score is 0.784804753820034
+recall_score is 0.7773873501446878
+              precision    recall  f1-score   support
+
+    tich_cuc       0.76      0.71      0.73        41
+    tieu_cuc       0.81      0.85      0.83        59
+
+   micro avg       0.79      0.79      0.79       100
+   macro avg       0.78      0.78      0.78       100
+weighted avg       0.79      0.79      0.79       100
+Data train positive/negative is 452/448
+Data test positive/negative is 55/45
+Data predicted positive/negative is 53/47 
+Accuracy_score is 0.82 
+F1_score is 0.818840579710145
+precision_score is 0.8181453231633882
+recall_score is 0.8202020202020202
+              precision    recall  f1-score   support
+
+    tich_cuc       0.85      0.82      0.83        55
+    tieu_cuc       0.79      0.82      0.80        45
+
+   micro avg       0.82      0.82      0.82       100
+   macro avg       0.82      0.82      0.82       100
+weighted avg       0.82      0.82      0.82       100
+------------------------------------------------
+Avg precision is 0.801830907853701 
+Avg recall is 0.8015530201425303 
+Avg f1 is 0.8019999999999999 
+Time is 1.3552657000000001 

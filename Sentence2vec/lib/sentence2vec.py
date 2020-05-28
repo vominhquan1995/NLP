@@ -18,7 +18,7 @@ class Sentence2Vec:
         # alpha-numericals and spaces
         sentence = re.sub(r'[^A-Za-z0-9\s]', r'', str(sentence).lower())
 
-        vectors = [self.model.wv[w] for w in ViTokenizer.word_tokenize(sentence)
+        vectors = [self.model.wv[w] for w in ViTokenizer.tokenize(sentence)
                 if w in self.model.wv]
 
         v = np.zeros(self.model.vector_size)
