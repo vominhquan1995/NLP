@@ -26,7 +26,7 @@ class ClassificationPiPe:
             ("tfidf", TfidfTransformer()),
             ("clf", SGDClassifier(loss='log', penalty='l2', alpha=1e-3, max_iter=3000, random_state=None))
             ])
-        if(option == 'naive'):
+        if(option == 'navie'):
             self.option = 'NAVIE'
             self.clf = Pipeline([
                 ("vect", CountVectorizer()),#bag-of-words

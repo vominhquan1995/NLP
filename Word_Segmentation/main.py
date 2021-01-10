@@ -75,7 +75,8 @@ if __name__ == '__main__':
             countF = countF+1
             print("Process train data: %s/%s" %(countF, countA))
             for text in open(os.path.join(path, filename),encoding="utf8",errors='ignore') :
-                text = text.strip()
+                # trim sentence
+                # text = text.strip()
                 # for childText in sent_tokenize(text):
                     # word = childText.translate(str.maketrans(' ', ' ', string.punctuation))
                 # output =   word_tokenize(text, format="text") 
@@ -86,5 +87,5 @@ if __name__ == '__main__':
                     output= TextPreprocess.preprocess(TextPreprocess,output) + "\n"
                     print('clean text: ' , output)
                     f.write(output)
-                break    
-            break    
+                # break    
+            # break    

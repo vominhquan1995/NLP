@@ -14,8 +14,6 @@ class ClassificationSVC:
 
     def run(mode):
         
-
-        start = timeit.default_timer()
         # define model classification
         model = Sentence2Vec('input/model/data_train_200v.model')
         clf_svm = SVC(kernel='linear', C = 1e3)
@@ -45,6 +43,8 @@ class ClassificationSVC:
         precision_avg = []
         recall_avg = []
         f1_avg = []
+        start = timeit.default_timer()
+        totalTimeTraining = []
         for train_index, test_index in kf.split(data_shuffle):
             # path_output_predict_pos = 'output/data_pos_' + time.strftime("%d%m%Y_%H%M%S") + '.txt'
             # path_output_predict_neg = 'output/data_neg_' + time.strftime("%d%m%Y_%H%M%S") + '.txt'
@@ -54,28 +54,24 @@ class ClassificationSVC:
 
             X_train, X_test = np.array(data_shuffle)[train_index], np.array(data_shuffle)[test_index]
             
-
-            print('Begin run')
             f_output.writelines("##################################################\n")
-
 
             data_train = []
             label_train = []
-            
+            tBegin = timeit.default_timer()
             for row in X_train:
                 data_train.append(model.get_vector(row[0]))
                 label_train.append(row[1]) 
             clf = clf.fit(data_train,label_train)
-            print("Train data success")
-
-
+            tEnd = timeit.default_timer()
+            totalTimeTraining.append((tEnd - tBegin))
             y_test = []
             y_result =[]
             positive = []
             negative = []
 
             # run data test
-            print("Find %s data test" % len(X_test))
+            # print("Find %s data test" % len(X_test))
             count_test_pos= 0
             count_test_neg= 0
             for row in X_test:
@@ -117,6 +113,7 @@ class ClassificationSVC:
         f_output.writelines('Avg recall is %s \n' % ClassificationSVC.Average(recall_avg))
         f_output.writelines('Avg f1 is %s \n' % ClassificationSVC.Average(f1_avg))
         f_output.writelines('Time is %s \n' % (stop - start))
+        print('Total time training is %s' % sum(totalTimeTraining))
 
 
 
