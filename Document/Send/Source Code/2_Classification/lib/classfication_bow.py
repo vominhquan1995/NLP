@@ -42,7 +42,7 @@ class ClassificationPow:
             ])
     def run(self):
         start = timeit.default_timer()
-         path_output ="output/log_{}_running_{}.txt".format(mode, datetime.today().strftime("%H%M%S%d%m%Y")) 
+        path_output ="output/log_{}_running_{}.txt".format(mode, datetime.today().strftime("%H%M%S%d%m%Y")) 
         f_output = open(path_output, "a",encoding="utf8")
         f_output.writelines("######################### START WITH MODE %s #########################" %self.option)
 
