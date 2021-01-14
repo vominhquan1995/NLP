@@ -16,8 +16,8 @@
 
 ### 2_Classification
   - Biễu diễn các dữ liệu thành các mô hình:
-    + mô hình túi từ (bags of word)
-    + mô hình không gian vector (sentence2vec)
+    + Mô hình túi từ (bags of word)
+    + Mô hình không gian vector (sentence2vec)
   - Chạy thực nghiệm với các thuật toán phân lớp: naive , svm, tree
 
 
