@@ -1,0 +1,135 @@
+######################### START WITH MODE SVM #########################Data train positive/negative is 454/446
+Data test positive/negative is 53/47
+Data predicted positive/negative is 53/47 
+Accuracy_score is 0.86 
+F1_score is 0.8594941790445605
+precision_score is 0.8594941790445605
+recall_score is 0.8594941790445605
+             precision    recall  f1-score   support
+
+   tich_cuc       0.87      0.87      0.87        53
+   tieu_cuc       0.85      0.85      0.85        47
+
+avg / total       0.86      0.86      0.86       100
+Data train positive/negative is 461/439
+Data test positive/negative is 46/54
+Data predicted positive/negative is 45/55 
+Accuracy_score is 0.89 
+F1_score is 0.8891017239641092
+precision_score is 0.8898989898989899
+recall_score is 0.8884863123993558
+             precision    recall  f1-score   support
+
+   tich_cuc       0.89      0.87      0.88        46
+   tieu_cuc       0.89      0.91      0.90        54
+
+avg / total       0.89      0.89      0.89       100
+Data train positive/negative is 461/439
+Data test positive/negative is 46/54
+Data predicted positive/negative is 51/49 
+Accuracy_score is 0.83 
+F1_score is 0.8298468621759584
+precision_score is 0.8309323729491797
+recall_score is 0.8329307568438002
+             precision    recall  f1-score   support
+
+   tich_cuc       0.78      0.87      0.82        46
+   tieu_cuc       0.88      0.80      0.83        54
+
+avg / total       0.83      0.83      0.83       100
+Data train positive/negative is 458/442
+Data test positive/negative is 49/51
+Data predicted positive/negative is 49/51 
+Accuracy_score is 0.88 
+F1_score is 0.8799519807923168
+precision_score is 0.8799519807923168
+recall_score is 0.8799519807923168
+             precision    recall  f1-score   support
+
+   tich_cuc       0.88      0.88      0.88        49
+   tieu_cuc       0.88      0.88      0.88        51
+
+avg / total       0.88      0.88      0.88       100
+Data train positive/negative is 454/446
+Data test positive/negative is 53/47
+Data predicted positive/negative is 51/49 
+Accuracy_score is 0.84 
+F1_score is 0.8397435897435898
+precision_score is 0.8395358143257303
+recall_score is 0.8406262545162586
+             precision    recall  f1-score   support
+
+   tich_cuc       0.86      0.83      0.85        53
+   tieu_cuc       0.82      0.85      0.83        47
+
+avg / total       0.84      0.84      0.84       100
+Data train positive/negative is 458/442
+Data test positive/negative is 49/51
+Data predicted positive/negative is 46/54 
+Accuracy_score is 0.89 
+F1_score is 0.8897243107769424
+precision_score is 0.8917069243156199
+recall_score is 0.8893557422969187
+             precision    recall  f1-score   support
+
+   tich_cuc       0.91      0.86      0.88        49
+   tieu_cuc       0.87      0.92      0.90        51
+
+avg / total       0.89      0.89      0.89       100
+Data train positive/negative is 449/451
+Data test positive/negative is 58/42
+Data predicted positive/negative is 52/48 
+Accuracy_score is 0.84 
+F1_score is 0.8383838383838385
+precision_score is 0.8373397435897436
+recall_score is 0.8456486042692939
+             precision    recall  f1-score   support
+
+   tich_cuc       0.90      0.81      0.85        58
+   tieu_cuc       0.77      0.88      0.82        42
+
+avg / total       0.85      0.84      0.84       100
+Data train positive/negative is 455/445
+Data test positive/negative is 52/48
+Data predicted positive/negative is 46/54 
+Accuracy_score is 0.88 
+F1_score is 0.8799519807923168
+precision_score is 0.8840579710144928
+recall_score is 0.8822115384615384
+             precision    recall  f1-score   support
+
+   tich_cuc       0.93      0.83      0.88        52
+   tieu_cuc       0.83      0.94      0.88        48
+
+avg / total       0.89      0.88      0.88       100
+Data train positive/negative is 457/443
+Data test positive/negative is 50/50
+Data predicted positive/negative is 47/53 
+Accuracy_score is 0.85 
+F1_score is 0.8498648783905516
+precision_score is 0.851264552388599
+recall_score is 0.85
+             precision    recall  f1-score   support
+
+   tich_cuc       0.87      0.82      0.85        50
+   tieu_cuc       0.83      0.88      0.85        50
+
+avg / total       0.85      0.85      0.85       100
+Data train positive/negative is 456/444
+Data test positive/negative is 51/49
+Data predicted positive/negative is 53/47 
+Accuracy_score is 0.86 
+F1_score is 0.8597756410256411
+precision_score is 0.8606985146527499
+recall_score is 0.8595438175270108
+             precision    recall  f1-score   support
+
+   tich_cuc       0.85      0.88      0.87        51
+   tieu_cuc       0.87      0.84      0.85        49
+
+avg / total       0.86      0.86      0.86       100
+------------------------------------------------
+Avg precision is 0.8624881042971981 
+Avg recall is 0.8628249186151054 
+Avg f1 is 0.8619999999999999 
+Time is 4.5063472 
