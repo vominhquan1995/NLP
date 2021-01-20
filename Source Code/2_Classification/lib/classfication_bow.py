@@ -27,8 +27,8 @@ class ClassificationPow:
             ("tfidf", TfidfTransformer()),
             ("clf", SGDClassifier(loss='log', penalty='l2', alpha=1e-3, max_iter=3000, random_state=None))
             ])
-        if(option == 'navie'):
-            self.option = 'NAVIE'
+        if(option == 'naive'):
+            self.option = 'NAIVE'
             self.clf = Pipeline([
                 ("vect", CountVectorizer()),#bag-of-words
                 ("tfidf", TfidfTransformer()),#tf-idf
@@ -112,7 +112,7 @@ class ClassificationPow:
                     negative.append(row[0])
             # show result 
             target_names = ['tich_cuc', 'tieu_cuc']
-            print(classification_report(y_test, y_result,target_names=target_names))
+            # print(classification_report(y_test, y_result,target_names=target_names))
             f_output.write('Data test positive/negative is %s/%s' % (count_test_pos ,count_test_neg) + "\n")
             f_output.writelines('Data predicted positive/negative is %s/%s \n' % (len(positive) ,len(negative)))
             f_output.writelines('Accuracy_score is %s \n' % (accuracy_score(y_test, y_result, normalize=True)))

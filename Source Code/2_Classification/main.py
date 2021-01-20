@@ -21,11 +21,13 @@ if __name__ == '__main__':
         ClassificationSentence2vec.run('svm')
     if(args.mode == 'naive'):
         ClassificationSentence2vec.run('naive')
+    if(args.mode == 'tree'):
+            ClassificationSentence2vec.run('tree')
     if(args.mode == 'pow-svm'):
         pipe =ClassificationPow('svm')
         pipe.run()
-    if(args.mode == 'pow-navie'):
-        pipe = ClassificationPow('navie')
+    if(args.mode == 'pow-naive'):
+        pipe = ClassificationPow('naive')
         pipe.run()
     if(args.mode == 'pow-tree'):
         pipe = ClassificationPow('tree')

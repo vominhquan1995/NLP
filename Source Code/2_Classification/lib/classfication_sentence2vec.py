@@ -2,6 +2,7 @@ import pandas as pd
 from sklearn.svm import SVC
 import timeit
 from lib.sentence2vec import Sentence2Vec
+from sklearn.tree import DecisionTreeClassifier
 import numpy as p
 import os,time,random
 from sklearn.model_selection import KFold
@@ -16,15 +17,18 @@ class ClassificationSentence2vec:
     def run(mode):
         
         # define model classification
-        model = Sentence2Vec('input/data_train_200v.model')
+        model = Sentence2Vec('input/data_train_300v.model')
         clf_svm = SVC(kernel='linear', C = 1e3)
         clf_naive = BernoulliNB()
+        clf_tree = DecisionTreeClassifier()
         # default svm
         clf = clf_svm
         if(mode == 'svm'):
             clf = clf_svm
         if(mode == 'naive'):
             clf = clf_naive
+        if(mode == 'tree'):
+                clf = clf_tree
         
         # define file write log
         path_output ="output/log_{}_running_{}.txt".format(mode, datetime.today().strftime("%H%M%S%d%m%Y")) 

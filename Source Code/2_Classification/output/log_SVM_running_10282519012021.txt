@@ -1,1 +1,0 @@
-######################### START WITH MODE SVM #########################Data train positive/negative is 450/450

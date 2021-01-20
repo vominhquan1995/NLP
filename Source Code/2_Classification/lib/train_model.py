@@ -16,9 +16,9 @@ class TrainingModel:
           tok_titles = [ViTokenizer.tokenize(title) for title in lineList]
           # train word2vec 
           # số chiều vector 200
-          model = Word2Vec(tok_titles, sg=1, size=200, window=5, min_count=5, workers=5,iter=10)
+          model = Word2Vec(tok_titles, sg=1, size=300, window=5, min_count=5, workers=5,iter=10)
           # save model to file
-          model.save('input/data_train_200v.model')
+          model.save('input/data_train_300v.model')
 
  
 
